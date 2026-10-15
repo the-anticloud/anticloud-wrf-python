@@ -1,0 +1,632 @@
+{
+  "schema": "anticloud.tier-bench/1",
+  "project": "WRF_PYTHON",
+  "source": {
+    "repo_path": "E:\\fenta\\Downloads\\The Anticloud\\ANTICLOUD_REPOS\\ACADEMIA_RD\\WRF_PYTHON\\UPSTREAM_CLONE",
+    "git": {
+      "head": "",
+      "url": "https://github.com/",
+      "branch": "master",
+      "committed_at": "2026-09-29T11:06:59+04:00"
+    }
+  },
+  "metrics": {
+    "files_total": 295,
+    "source_files_scanned": 74,
+    "lines_of_code": 41244,
+    "languages": {
+      ".png": 122,
+      ".py": 70,
+      ".rst": 22,
+      ".f90": 21,
+      ".ipynb": 10,
+      ".ncl": 8,
+      "(none)": 7,
+      ".yml": 6,
+      ".bat": 5,
+      ".md": 4,
+      ".txt": 3,
+      ".sh": 3,
+      ".nc": 2,
+      ".ys": 2,
+      ".c": 2
+    }
+  },
+  "licence": {
+    "spdx": "Apache-2.0",
+    "class": "A",
+    "source_file": "LICENSE",
+    "redistribution_allowed": true
+  },
+  "dependencies": {
+    "count": 24,
+    "unique": 24,
+    "by_ecosystem": {
+      "conda": 17,
+      "native": 2,
+      "pypi": 5
+    },
+    "list": [
+      {
+        "ecosystem": "native",
+        "name": "Python",
+        "version": "",
+        "source_file": "CMakeLists.txt",
+        "raw": "find_package(Python"
+      },
+      {
+        "ecosystem": "native",
+        "name": "OpenMP",
+        "version": "",
+        "source_file": "CMakeLists.txt",
+        "raw": "find_package(OpenMP"
+      },
+      {
+        "ecosystem": "pypi",
+        "name": "basemap",
+        "version": "",
+        "source_file": "pyproject.toml",
+        "raw": "basemap"
+      },
+      {
+        "ecosystem": "pypi",
+        "name": "numpy",
+        "version": ">=1.11",
+        "source_file": "pyproject.toml",
+        "raw": "numpy >=1.11"
+      },
+      {
+        "ecosystem": "pypi",
+        "name": "setuptools",
+        "version": ">=61",
+        "source_file": "pyproject.toml",
+        "raw": "setuptools>=61"
+      },
+      {
+        "ecosystem": "pypi",
+        "name": "wrapt",
+        "version": "",
+        "source_file": "pyproject.toml",
+        "raw": "wrapt"
+      },
+      {
+        "ecosystem": "pypi",
+        "name": "xarray",
+        "version": "",
+        "source_file": "pyproject.toml",
+        "raw": "xarray"
+      },
+      {
+        "ecosystem": "conda",
+        "name": "conda-forge",
+        "version": "",
+        "source_file": "build_envs/environment.yml",
+        "raw": "- conda-forge"
+      },
+      {
+        "ecosystem": "conda",
+        "name": "python",
+        "version": "",
+        "source_file": "build_envs/environment.yml",
+        "raw": "- python"
+      },
+      {
+        "ecosystem": "conda",
+        "name": "compilers",
+        "version": "",
+        "source_file": "build_envs/environment.yml",
+        "raw": "- compilers"
+      },
+      {
+        "ecosystem": "conda",
+        "name": "basemap",
+        "version": "",
+        "source_file": "build_envs/environment.yml",
+        "raw": "- basemap"
+      },
+      {
+        "ecosystem": "conda",
+        "name": "cartopy",
+        "version": "",
+        "source_file": "build_envs/environment.yml",
+        "raw": "- cartopy"
+      },
+      {
+        "ecosystem": "conda",
+        "name": "jupyter",
+        "version": "",
+        "source_file": "build_envs/environment.yml",
+        "raw": "- jupyter"
+      },
+      {
+        "ecosystem": "conda",
+        "name": "matplotlib",
+        "version": "",
+        "source_file": "build_envs/environment.yml",
+        "raw": "- matplotlib"
+      },
+      {
+        "ecosystem": "conda",
+        "name": "netcdf4",
+        "version": "",
+        "source_file": "build_envs/environment.yml",
+        "raw": "- netcdf4"
+      },
+      {
+        "ecosystem": "conda",
+        "name": "numpy",
+        "version": "",
+        "source_file": "build_envs/environment.yml",
+        "raw": "- numpy"
+      },
+      {
+        "ecosystem": "conda",
+        "name": "pycodestyle",
+        "version": "",
+        "source_file": "build_envs/environment.yml",
+        "raw": "- pycodestyle"
+      },
+      {
+        "ecosystem": "conda",
+        "name": "sphinx",
+        "version": "",
+        "source_file": "build_envs/environment.yml",
+        "raw": "- sphinx"
+      },
+      {
+        "ecosystem": "conda",
+        "name": "sphinx_rtd_theme",
+        "version": "",
+        "source_file": "build_envs/environment.yml",
+        "raw": "- sphinx_rtd_theme"
+      },
+      {
+        "ecosystem": "conda",
+        "name": "sphinxcontrib-googleanalytics",
+        "version": "",
+        "source_file": "build_envs/environment.yml",
+        "raw": "- sphinxcontrib-googleanalytics"
+      },
+      {
+        "ecosystem": "conda",
+        "name": "wrapt",
+        "version": "",
+        "source_file": "build_envs/environment.yml",
+        "raw": "- wrapt"
+      },
+      {
+        "ecosystem": "conda",
+        "name": "xarray",
+        "version": "",
+        "source_file": "build_envs/environment.yml",
+        "raw": "- xarray"
+      },
+      {
+        "ecosystem": "conda",
+        "name": "python-build",
+        "version": "",
+        "source_file": "build_envs/environment.yml",
+        "raw": "- python-build"
+      },
+      {
+        "ecosystem": "conda",
+        "name": "pip",
+        "version": "",
+        "source_file": "build_envs/environment.yml",
+        "raw": "- pip"
+      }
+    ]
+  },
+  "owasp_top10": {
+    "total_findings": 13,
+    "files_with_findings": 8,
+    "severity": {
+      "high": 3,
+      "medium": 0,
+      "low": 10
+    },
+    "categories": {
+      "A01-BrokenAccessControl": {
+        "count": 0,
+        "findings": []
+      },
+      "A02-CryptographicFailures": {
+        "count": 0,
+        "findings": []
+      },
+      "A03-Injection": {
+        "count": 3,
+        "findings": [
+          {
+            "severity": "high",
+            "file": "test/utests.py",
+            "line": 52,
+            "cwe": "CWE-78",
+            "snippet": "status = subprocess.call(cmd, shell=True)"
+          },
+          {
+            "severity": "high",
+            "file": "fortran/ripW.c",
+            "line": 88,
+            "cwe": "CWE-120",
+            "snippet": "strcpy(psa_file,path);"
+          },
+          {
+            "severity": "high",
+            "file": "fortran/wrfW.c",
+            "line": 366,
+            "cwe": "CWE-120",
+            "snippet": "strcpy(cdescription,\"Temperature\");"
+          }
+        ]
+      },
+      "A04-InsecureDesign": {
+        "count": 5,
+        "findings": [
+          {
+            "severity": "low",
+            "file": "chey_intel.py",
+            "line": 194,
+            "cwe": "CWE-",
+            "snippet": "possible_executables = ['efl']  # XXX this is a wild guess"
+          },
+          {
+            "severity": "low",
+            "file": "src/wrf/g_precip.py",
+            "line": 30,
+            "cwe": "CWE-",
+            "snippet": "# TODO:  Handle bucket flipping"
+          },
+          {
+            "severity": "low",
+            "file": "fortran/ripW.c",
+            "line": 973,
+            "cwe": "CWE-",
+            "snippet": "* This is a bit whacky, because the Fortran code is doing something"
+          },
+          {
+            "severity": "low",
+            "file": "fortran/wrfW.c",
+            "line": 10035,
+            "cwe": "CWE-",
+            "snippet": "* This is a bit whacky, because the Fortran code is doing something"
+          },
+          {
+            "severity": "low",
+            "file": "doc/source/conf.py",
+            "line": 60,
+            "cwe": "CWE-",
+            "snippet": "# If extensions (or modules to document with autodoc) are in another directory,"
+          }
+        ]
+      },
+      "A05-SecurityMisconfiguration": {
+        "count": 0,
+        "findings": []
+      },
+      "A06-VulnerableComponents": {
+        "count": 0,
+        "findings": []
+      },
+      "A07-AuthFailures": {
+        "count": 0,
+        "findings": []
+      },
+      "A08-SoftwareDataIntegrity": {
+        "count": 5,
+        "findings": [
+          {
+            "severity": "low",
+            "file": "chey_intel.py",
+            "line": 1,
+            "cwe": "CWE-319",
+            "snippet": "# http://developer.intel.com/software/products/compilers/flin/"
+          },
+          {
+            "severity": "low",
+            "file": "test/utests.py",
+            "line": 58,
+            "cwe": "CWE-319",
+            "snippet": "# http://eli.thegreenplace.net/2014/04/02/"
+          },
+          {
+            "severity": "low",
+            "file": "test/ci_tests/utests.py",
+            "line": 26,
+            "cwe": "CWE-319",
+            "snippet": "# http://eli.thegreenplace.net/2014/04/02/dynamically-generating-python-test-cases"
+          },
+          {
+            "severity": "low",
+            "file": "src/wrf/extension.py",
+            "line": 66,
+            "cwe": "CWE-319",
+            "snippet": "`f2py doc <http://docs.scipy.org/doc/numpy-1.11.0/f2py/>`_"
+          },
+          {
+            "severity": "low",
+            "file": "doc/source/conf.py",
+            "line": 87,
+            "cwe": "CWE-319",
+            "snippet": "'matplotlib': ('http://matplotlib.org/', None),"
+          }
+        ]
+      },
+      "A09-LoggingMonitoringFailures": {
+        "count": 0,
+        "findings": []
+      },
+      "A10-SSRF": {
+        "count": 0,
+        "findings": []
+      }
+    }
+  },
+  "owasp_llm_top10": {
+    "total_findings": 1,
+    "files_with_findings": 1,
+    "severity": {
+      "high": 0,
+      "medium": 1,
+      "low": 0
+    },
+    "categories": {
+      "LLM01-PromptInjection": {
+        "count": 1,
+        "findings": [
+          {
+            "severity": "medium",
+            "file": "fortran/build_help/sub_sizes.py",
+            "line": 49,
+            "cwe": "CWE-1336",
+            "snippet": "ompgen_template = Template(ompgen_in.read())"
+          }
+        ]
+      },
+      "LLM02-SensitiveInfoDisclosure": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM03-SupplyChain": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM04-DataPoisoning": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM05-ImproperOutputHandling": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM06-ExcessiveAgency": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM07-SystemPromptLeak": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM08-VectorEmbeddingWeaknesses": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM09-Misinformation": {
+        "count": 0,
+        "findings": []
+      },
+      "LLM10-UnboundedConsumption": {
+        "count": 0,
+        "findings": []
+      }
+    }
+  },
+  "sbom": {
+    "bomFormat": "CycloneDX",
+    "specVersion": "1.5",
+    "serialNumber": "urn:uuid:b556682a-2001-50ff-b06e-34100ea6aeae",
+    "version": 1,
+    "metadata": {
+      "timestamp": "2026-10-06T07:01:17Z",
+      "component": {
+        "type": "application",
+        "name": "WRF_PYTHON",
+        "version": "83b357604d34",
+        "bom-ref": "pkg:generic/anticloud/WRF_PYTHON@83b357604d34",
+        "purl": "pkg:generic/anticloud/WRF_PYTHON@83b357604d34",
+        "licenses": [
+          {
+            "license": {
+              "id": "Apache-2.0"
+            }
+          }
+        ]
+      },
+      "properties": [
+        {
+          "name": "anticloud:source-commit",
+          "value": ""
+        },
+        {
+          "name": "anticloud:source-url",
+          "value": "https://github.com/"
+        },
+        {
+          "name": "anticloud:tier",
+          "value": "tier-agent"
+        }
+      ]
+    },
+    "components": [
+      {
+        "type": "library",
+        "name": "Python",
+        "version": "unspecified",
+        "purl": "pkg:generic/Python",
+        "bom-ref": "native/Python@unspecified"
+      },
+      {
+        "type": "library",
+        "name": "OpenMP",
+        "version": "unspecified",
+        "purl": "pkg:generic/OpenMP",
+        "bom-ref": "native/OpenMP@unspecified"
+      },
+      {
+        "type": "library",
+        "name": "basemap",
+        "version": "unspecified",
+        "purl": "pkg:pypi/basemap",
+        "bom-ref": "pypi/basemap@unspecified"
+      },
+      {
+        "type": "library",
+        "name": "numpy",
+        "version": ">=1.11",
+        "purl": "pkg:pypi/numpy@1.11",
+        "bom-ref": "pypi/numpy@>=1.11"
+      },
+      {
+        "type": "library",
+        "name": "setuptools",
+        "version": ">=61",
+        "purl": "pkg:pypi/setuptools@61",
+        "bom-ref": "pypi/setuptools@>=61"
+      },
+      {
+        "type": "library",
+        "name": "wrapt",
+        "version": "unspecified",
+        "purl": "pkg:pypi/wrapt",
+        "bom-ref": "pypi/wrapt@unspecified"
+      },
+      {
+        "type": "library",
+        "name": "xarray",
+        "version": "unspecified",
+        "purl": "pkg:pypi/xarray",
+        "bom-ref": "pypi/xarray@unspecified"
+      },
+      {
+        "type": "library",
+        "name": "conda-forge",
+        "version": "unspecified",
+        "purl": "pkg:generic/conda-forge",
+        "bom-ref": "conda/conda-forge@unspecified"
+      },
+      {
+        "type": "library",
+        "name": "python",
+        "version": "unspecified",
+        "purl": "pkg:generic/python",
+        "bom-ref": "conda/python@unspecified"
+      },
+      {
+        "type": "library",
+        "name": "compilers",
+        "version": "unspecified",
+        "purl": "pkg:generic/compilers",
+        "bom-ref": "conda/compilers@unspecified"
+      },
+      {
+        "type": "library",
+        "name": "basemap",
+        "version": "unspecified",
+        "purl": "pkg:generic/basemap",
+        "bom-ref": "conda/basemap@unspecified"
+      },
+      {
+        "type": "library",
+        "name": "cartopy",
+        "version": "unspecified",
+        "purl": "pkg:generic/cartopy",
+        "bom-ref": "conda/cartopy@unspecified"
+      },
+      {
+        "type": "library",
+        "name": "jupyter",
+        "version": "unspecified",
+        "purl": "pkg:generic/jupyter",
+        "bom-ref": "conda/jupyter@unspecified"
+      },
+      {
+        "type": "library",
+        "name": "matplotlib",
+        "version": "unspecified",
+        "purl": "pkg:generic/matplotlib",
+        "bom-ref": "conda/matplotlib@unspecified"
+      },
+      {
+        "type": "library",
+        "name": "netcdf4",
+        "version": "unspecified",
+        "purl": "pkg:generic/netcdf4",
+        "bom-ref": "conda/netcdf4@unspecified"
+      },
+      {
+        "type": "library",
+        "name": "numpy",
+        "version": "unspecified",
+        "purl": "pkg:generic/numpy",
+        "bom-ref": "conda/numpy@unspecified"
+      },
+      {
+        "type": "library",
+        "name": "pycodestyle",
+        "version": "unspecified",
+        "purl": "pkg:generic/pycodestyle",
+        "bom-ref": "conda/pycodestyle@unspecified"
+      },
+      {
+        "type": "library",
+        "name": "sphinx",
+        "version": "unspecified",
+        "purl": "pkg:generic/sphinx",
+        "bom-ref": "conda/sphinx@unspecified"
+      },
+      {
+        "type": "library",
+        "name": "sphinx_rtd_theme",
+        "version": "unspecified",
+        "purl": "pkg:generic/sphinx_rtd_theme",
+        "bom-ref": "conda/sphinx_rtd_theme@unspecified"
+      },
+      {
+        "type": "library",
+        "name": "sphinxcontrib-googleanalytics",
+        "version": "unspecified",
+        "purl": "pkg:generic/sphinxcontrib-googleanalytics",
+        "bom-ref": "conda/sphinxcontrib-googleanalytics@unspecified"
+      },
+      {
+        "type": "library",
+        "name": "wrapt",
+        "version": "unspecified",
+        "purl": "pkg:generic/wrapt",
+        "bom-ref": "conda/wrapt@unspecified"
+      },
+      {
+        "type": "library",
+        "name": "xarray",
+        "version": "unspecified",
+        "purl": "pkg:generic/xarray",
+        "bom-ref": "conda/xarray@unspecified"
+      },
+      {
+        "type": "library",
+        "name": "python-build",
+        "version": "unspecified",
+        "purl": "pkg:generic/python-build",
+        "bom-ref": "conda/python-build@unspecified"
+      },
+      {
+        "type": "library",
+        "name": "pip",
+        "version": "unspecified",
+        "purl": "pkg:generic/pip",
+        "bom-ref": "conda/pip@unspecified"
+      }
+    ]
+  },
+  "elapsed_seconds": 18.41
+}
